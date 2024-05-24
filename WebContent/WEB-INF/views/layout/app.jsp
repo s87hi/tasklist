@@ -16,6 +16,6 @@
         <div id="content">${param.content}</div>
         <div id="footer">by Shino Hanasaki.</div>
     </div>
- </div>
+ 
 </body>
 </html>
