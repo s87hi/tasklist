@@ -41,6 +41,7 @@ public class DestroyServlet extends HttpServlet {
             em.getTransaction().begin();
             em.remove(t);       // データ削除
             em.getTransaction().commit();
+            request.getSession().setAttribute("flush", "削除完了！やること少なくなっちゃった");
             em.close();
 
             // セッションスコープ上の不要になったデータを削除
